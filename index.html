@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulário Interativo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome/all.css">
+</head>
+<body>
+    <div class="container-contato">
+        <ul class="progressbar">
+                <li class="active" id="0">Nome</li>
+                <li id="1">E-mail</li>
+                <li id="2">Assunto</li>
+                <li id="3">Mensagem</li>
+                <li id="4" class="last">Fim</li>
+        </ul>
+        <form id="formContato">
+            <div class="form-field fadeInRightContact active" id="0">
+                <h1>Olá, entre em contato conosco</h1>
+                <p>Será um prazer lhe atender</p>
+                <input type="text" placeholder="Seu nome, por favor" name="nome" id="nome">
+                <div class="nav"><i class="fas fa-chevron-right"></i></div>
+            </div>
+            <div class="form-field fadeInRightContact" id="1">
+                <h1><span id="nome-cliente"></span></h1>
+                <p>Qual é o seu e-mail principal?</p>
+                <input type="email" placeholder="Seu e-mail principal, por favor" name="email">
+                <div class="nav"><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-right"></i></div>
+            </div>
+            <div class="form-field fadeInRightContact" id="2">
+                <h1>Certo</h1>
+                <p>Qual o motivo do contato?</p>
+                <input type="text" placeholder="Assunto, por favor" name="assunto">
+                <div class="nav"><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-right"></i></div>
+            </div>
+            <div class="form-field fadeInRightContact" id="3">
+                <h1>Compreendemos</h1>
+                <p>Qual a sua mensagem?</p>
+                <textarea rows="5" placeholder="Sinta-se à vontade" name="mensagem"></textarea>
+                <div class="nav"><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-right"></i></div>
+            </div>
+            <div class="form-field fadeInRightContact last" id="4">
+                <h1>Obrigado!</h1>
+                <p>Entraremos em contato assim que possível.</p>
+                <i class="fas fa-check green-color"></i>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
